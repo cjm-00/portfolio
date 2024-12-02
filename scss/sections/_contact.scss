@@ -1,0 +1,73 @@
+@use '../partials/colors';
+
+
+.contact {
+    display: flex;
+    background-color: colors.$eerie-black;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    border-top: 35px solid colors.$ebony;    
+    
+    &_heading-light {
+        color: colors.$dutch-white;
+        font-size: 3em;
+        font-family: "Righteous", sans-serif; 
+        font-weight: 400; 
+        margin: 0%;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    &_box {
+        background-color: colors.$ebony;
+        height: 70vh;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        
+    }
+
+    p {
+        color: colors.$dutch-white;
+        font-family: "Noto Sans", serif; 
+        font-size: 0.85em;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+    label {
+        color: colors.$dutch-white;
+        font-family: "Noto Sans", serif; 
+        font-size: 0.85em;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    button{
+        color: colors.$dutch-white;
+        background-color: colors.$bittersweet-shimmer;
+        font-weight: 700;
+        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+        border: 2px solid colors.$light-coral;
+        &:hover {
+            background-color: colors.$light-coral;
+            font-weight: 800;
+
+          }
+    }
+    
+    img {
+        height: 75px;
+        filter: invert(4%) sepia(4%) saturate(4107%) hue-rotate(161deg) brightness(98%) contrast(89%);
+    }
+
+}
