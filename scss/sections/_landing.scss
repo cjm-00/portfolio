@@ -13,7 +13,7 @@ nav {
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    border-bottom: 5px solid colors.$eerie-black;
+    border-bottom: 0.3px solid colors.$eerie-black;
     
     
     a {
@@ -51,7 +51,7 @@ nav {
         padding-left: 20px;
     }
     &_subheading-red {
-        color: colors.$bittersweet-shimmer;
+        color: colors.$light-coral;
         font-size: 1.6em;
         font-family: "Noto Sans", serif; 
         font-weight: 630;
@@ -89,7 +89,7 @@ nav {
     }
     
     .landing {
-        border: 2px solid greenyellow;
+        // border: 2px solid greenyellow;
 
         &_heading-light {
             font-size: 6em;
@@ -132,7 +132,7 @@ nav {
     
     
     .landing {
-        border: 2px solid blueviolet;
+        // border: 2px solid blueviolet;
     
         &_heading-light {
             font-size: 6.9em;
@@ -175,7 +175,7 @@ nav {
     
     
     .landing {
-        border: 2px solid pink;
+        // border: 2px solid pink;
     
         &_heading-light {
             font-size: 6.9em;
@@ -218,7 +218,7 @@ nav {
     
     
     .landing {
-        border: 2px solid red;
+        // border: 2px solid red;
     
         &_heading-light {
             font-size: 6.9em;

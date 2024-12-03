@@ -9,7 +9,7 @@ nav {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 5px solid #141719;
+  border-bottom: 0.3px solid #141719;
 }
 nav a {
   color: #D6d6b1;
@@ -41,7 +41,7 @@ nav a:hover {
   padding-left: 20px;
 }
 .landing_subheading-red {
-  color: #Bf4342;
+  color: #ee7674;
   font-size: 1.6em;
   font-family: "Noto Sans", serif;
   font-weight: 630;
@@ -69,9 +69,6 @@ nav a:hover {
   }
   nav a:hover {
     color: #Bf4342;
-  }
-  .landing {
-    border: 2px solid greenyellow;
   }
   .landing_heading-light {
     font-size: 6em;
@@ -102,9 +99,6 @@ nav a:hover {
   nav a:hover {
     color: #Bf4342;
   }
-  .landing {
-    border: 2px solid blueviolet;
-  }
   .landing_heading-light {
     font-size: 6.9em;
     padding-top: 370px;
@@ -134,9 +128,6 @@ nav a:hover {
   nav a:hover {
     color: #Bf4342;
   }
-  .landing {
-    border: 2px solid pink;
-  }
   .landing_heading-light {
     font-size: 6.9em;
     padding-top: 170px;
@@ -165,9 +156,6 @@ nav a:hover {
   }
   nav a:hover {
     color: #Bf4342;
-  }
-  .landing {
-    border: 2px solid red;
   }
   .landing_heading-light {
     font-size: 6.9em;
@@ -225,6 +213,9 @@ nav a:hover {
   align-items: center;
   text-decoration: none;
 }
+.projects_button:hover {
+  background-color: #Bf4342;
+}
 .projects_button--current {
   color: #D6d6b1;
   font-size: 1em;
@@ -238,7 +229,10 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  border: dashed 5px #ee7674;
+}
+.projects_button--current:hover {
+  background-color: #ee7674;
+  color: #6b654b;
 }
 .projects img {
   height: 180px;
@@ -253,11 +247,18 @@ nav a:hover {
   margin-right: 30px;
   font-weight: 500;
 }
+.projects_link {
+  text-decoration: none;
+  color: #ee7674;
+  font-family: "Noto Sans", serif;
+  font-size: 0.85em;
+  font-weight: 700;
+}
+.projects_link:hover {
+  color: #Bf4342;
+}
 
 @media screen and (min-width: 577px) {
-  .projects {
-    border: 2px solid greenyellow;
-  }
   .projects_heading-light {
     font-size: 3em;
     padding-top: 150px;
@@ -273,6 +274,9 @@ nav a:hover {
     margin-left: 70px;
     margin-right: 70px;
   }
+  .projects_link {
+    font-size: 1em;
+  }
   .projects_button {
     font-size: 1.5em;
     height: 60px;
@@ -285,9 +289,6 @@ nav a:hover {
   }
 }
 @media screen and (min-width: 769px) {
-  .projects {
-    border: 2px solid blueviolet;
-  }
   .projects_heading-light {
     font-size: 4em;
     padding-top: 150px;
@@ -303,6 +304,9 @@ nav a:hover {
     margin-left: 70px;
     margin-right: 70px;
   }
+  .projects_link {
+    font-size: 1.1em;
+  }
   .projects_button {
     font-size: 1.5em;
     height: 80px;
@@ -315,9 +319,6 @@ nav a:hover {
   }
 }
 @media screen and (min-width: 1025px) {
-  .projects {
-    border: 2px solid pink;
-  }
   .projects_heading-light {
     font-size: 4em;
     padding-top: 75px;
@@ -336,6 +337,9 @@ nav a:hover {
     margin-left: 40px;
     margin-right: 40px;
   }
+  .projects_link {
+    font-size: 0.9em;
+  }
   .projects_button {
     font-size: 1.5em;
     height: 70px;
@@ -348,9 +352,6 @@ nav a:hover {
   }
 }
 @media screen and (min-width: 1081px) {
-  .projects {
-    border: 2px solid red;
-  }
   .projects_heading-light {
     font-size: 6em;
     padding-top: 75px;
@@ -373,6 +374,9 @@ nav a:hover {
     margin-left: 45px;
     margin-right: 45px;
   }
+  .projects_link {
+    font-size: 1em;
+  }
   .projects_button {
     font-size: 2em;
     height: 100px;
@@ -394,17 +398,15 @@ nav a:hover {
 .about .about_logobox {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: 100vh;
+  width: 35%;
   margin-top: 20px;
   justify-content: center;
   gap: 40px;
 }
 .about .about_bodybox {
   background-color: #141719;
-  height: 700px;
   margin-top: 90px;
-  width: 75%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,16 +441,12 @@ nav a:hover {
 }
 
 @media screen and (min-width: 577px) {
-  .about {
-    border: 2px solid greenyellow;
-  }
   .about .about_logobox {
     margin-top: 25px;
     gap: 70px;
   }
   .about .about_bodybox {
     margin-top: 100px;
-    height: 840px;
   }
   .about_heading-light {
     font-size: 4em;
@@ -468,16 +466,12 @@ nav a:hover {
   }
 }
 @media screen and (min-width: 769px) {
-  .about {
-    border: 2px solid blueviolet;
-  }
   .about .about_logobox {
     margin-top: 5px;
     gap: 60px;
   }
   .about .about_bodybox {
     margin-top: 100px;
-    height: 900px;
   }
   .about_heading-light {
     font-size: 5em;
@@ -497,16 +491,12 @@ nav a:hover {
   }
 }
 @media screen and (min-width: 1025px) {
-  .about {
-    border: 2px solid pink;
-  }
   .about .about_logobox {
     margin-top: 5px;
     gap: 30px;
   }
   .about .about_bodybox {
     margin-top: 80px;
-    height: 600px;
   }
   .about_heading-light {
     font-size: 4em;
@@ -526,16 +516,12 @@ nav a:hover {
   }
 }
 @media screen and (min-width: 1081px) {
-  .about {
-    border: 2px solid red;
-  }
   .about .about_logobox {
     margin-top: 5px;
     gap: 40px;
   }
   .about .about_bodybox {
     margin-top: 130px;
-    height: 880px;
   }
   .about_heading-light {
     font-size: 6em;
@@ -560,7 +546,7 @@ nav a:hover {
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  border-top: 35px solid #6b654b;
+  border-top: 15px solid #6b654b;
 }
 .contact_heading-light {
   color: #D6d6b1;
@@ -602,6 +588,7 @@ nav a:hover {
   background-color: #Bf4342;
   font-weight: 700;
   border-radius: 5px;
+  font-size: 0.85em;
   width: 150px;
   height: 40px;
   border: 2px solid #ee7674;
@@ -615,6 +602,154 @@ nav a:hover {
   filter: invert(4%) sepia(4%) saturate(4107%) hue-rotate(161deg) brightness(98%) contrast(89%);
 }
 
+@media screen and (min-width: 577px) {
+  .contact_heading-light {
+    font-size: 3.8em;
+    padding-top: 80px;
+    padding-bottom: 25px;
+  }
+  .contact_box {
+    height: 70vh;
+    width: 70%;
+    gap: 20px;
+  }
+  .contact p {
+    font-size: 1em;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+  }
+  .contact label {
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .contact button {
+    width: 180px;
+    height: 50px;
+    border: 2px solid #ee7674;
+    font-size: 1em;
+  }
+  .contact button:hover {
+    background-color: #ee7674;
+    font-weight: 800;
+  }
+  .contact img {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .contact_heading-light {
+    font-size: 4.2em;
+    padding-top: 100px;
+    padding-bottom: 35px;
+  }
+  .contact_box {
+    height: 70vh;
+    width: 70%;
+    gap: 25px;
+  }
+  .contact p {
+    font-size: 1.1em;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  .contact label {
+    font-size: 1.1em;
+    margin-right: 5px;
+  }
+  .contact button {
+    width: 200px;
+    height: 60px;
+    border: 2px solid #ee7674;
+    font-size: 1.1em;
+  }
+  .contact button:hover {
+    background-color: #ee7674;
+    font-weight: 800;
+  }
+  .contact img {
+    height: 100px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .contact_heading-light {
+    font-size: 3.8em;
+    padding-top: 80px;
+    padding-bottom: 25px;
+  }
+  .contact_box {
+    height: 70vh;
+    width: 70%;
+    gap: 10px;
+  }
+  .contact p {
+    font-size: 1em;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+  }
+  .contact label {
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .contact button {
+    width: 160px;
+    height: 45px;
+    border: 2px solid #ee7674;
+    font-size: 1em;
+  }
+  .contact button:hover {
+    background-color: #ee7674;
+    font-weight: 800;
+  }
+  .contact img {
+    height: 60px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .contact_heading-light {
+    font-size: 6em;
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+  .contact_box {
+    height: 70vh;
+    width: 70%;
+    gap: 15px;
+  }
+  .contact p {
+    font-size: 1.3em;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+    margin-top: 45px;
+  }
+  .contact label {
+    font-size: 1.3em;
+    margin-right: 5px;
+  }
+  .contact button {
+    width: 180px;
+    height: 50px;
+    border: 2px solid #ee7674;
+    font-size: 1.3em;
+    margin-top: 15px;
+  }
+  .contact button:hover {
+    background-color: #ee7674;
+    font-weight: 800;
+  }
+  .contact img {
+    height: 110px;
+    padding-top: 20px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

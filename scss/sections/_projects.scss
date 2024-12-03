@@ -46,6 +46,10 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
+
+        &:hover {
+            background-color: colors.$bittersweet-shimmer;
+        }
         
         &--current {
             color: colors.$dutch-white;
@@ -60,7 +64,14 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            border: dashed 5px colors.$light-coral;
+            // border: dashed 5px colors.$light-coral;
+
+            &:hover {
+                background-color: colors.$light-coral;
+                // border: dashed 5px colors.$bittersweet-shimmer;
+                color: colors.$ebony;
+
+            }
         }
 
     }
@@ -79,13 +90,24 @@
         margin-right: 30px;
         font-weight: 500;
     }
+
+    &_link {
+        text-decoration: none;
+        color: colors.$light-coral;
+        font-family: "Noto Sans", serif; 
+        font-size: 0.85em;
+        font-weight: 700;
+        &:hover {
+            color: colors.$bittersweet-shimmer;
+        }
+    }
     
 }
 
 
 @include scr.tablet { 
     .projects {
-        border: 2px solid greenyellow;
+        // border: 2px solid greenyellow;
 
         &_heading-light {
             font-size: 3em;
@@ -103,6 +125,10 @@
             font-size: 1em;
             margin-left: 70px;
             margin-right: 70px;
+        }
+
+        &_link {
+            font-size: 1em;
         }
 
         &_button {
@@ -125,7 +151,7 @@
 
 @include scr.large-tablet { 
     .projects {
-        border: 2px solid blueviolet;
+        // border: 2px solid blueviolet;
 
         &_heading-light {
             font-size: 4em;
@@ -143,6 +169,10 @@
             font-size: 1.1em;
             margin-left: 70px;
             margin-right: 70px;
+        }
+
+        &_link {
+            font-size: 1.1em;
         }
 
         &_button {
@@ -165,7 +195,7 @@
 
 @include scr.laptop { 
     .projects {
-        border: 2px solid pink;
+        // border: 2px solid pink;
 
         &_heading-light {
             font-size: 4em;
@@ -189,6 +219,10 @@
             margin-right: 40px;
         }
 
+        &_link {
+            font-size: 0.9em;
+        }
+
         &_button {
             font-size: 1.5em;
             height: 70px;
@@ -208,7 +242,7 @@
 
 @include scr.desktop { 
     .projects {
-        border: 2px solid red;
+        // border: 2px solid red;
 
         &_heading-light {
             font-size: 6em;
@@ -235,6 +269,10 @@
             font-size: 1em;
             margin-left: 45px;
             margin-right: 45px;
+        }
+
+        &_link {
+            font-size: 1em;
         }
 
         &_button {

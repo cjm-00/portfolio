@@ -12,8 +12,8 @@
     .about_logobox {
         display: flex;
         flex-direction: column;
-        width: 30%;
-        height: 100vh;
+        width: 35%;
+        // height: 100vh;
         margin-top: 20px;
         justify-content: center;
         gap: 40px;
@@ -21,9 +21,9 @@
     }
     .about_bodybox {
         background-color: colors.$eerie-black;
-        height: 700px;
+        // height: 700px;
         margin-top: 90px;
-        width: 75%;
+        width: 65%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -72,7 +72,7 @@
 @include scr.tablet { 
 
     .about {
-        border: 2px solid greenyellow;
+        // border: 2px solid greenyellow;
 
         .about_logobox {   
             margin-top: 25px;
@@ -80,7 +80,7 @@
         }
         .about_bodybox {
             margin-top: 100px;
-            height: 840px;
+            // height: 840px;
         }
         &_heading-light {
             font-size: 4em;
@@ -105,7 +105,7 @@
 @include scr.large-tablet { 
 
     .about {
-        border: 2px solid blueviolet;
+        // border: 2px solid blueviolet;
 
         .about_logobox {   
             margin-top: 5px;
@@ -113,7 +113,7 @@
         }
         .about_bodybox {
             margin-top: 100px;
-            height: 900px;
+            // height: 900px;
         }
         &_heading-light {
             font-size: 5em;
@@ -138,7 +138,7 @@
 @include scr.laptop { 
 
     .about {
-        border: 2px solid pink;
+        // border: 2px solid pink;
 
         .about_logobox {   
             margin-top: 5px;
@@ -146,7 +146,7 @@
         }
         .about_bodybox {
             margin-top: 80px;
-            height: 600px;
+            // height: 600px;
         }
         &_heading-light {
             font-size: 4em;
@@ -171,7 +171,7 @@
 @include scr.desktop { 
 
     .about {
-        border: 2px solid red;
+        // border: 2px solid red;
 
         .about_logobox {   
             margin-top: 5px;
@@ -179,7 +179,7 @@
         }
         .about_bodybox {
             margin-top: 130px;
-            height: 880px;
+            // height: 880px;
         }
         &_heading-light {
             font-size: 6em;
