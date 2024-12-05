@@ -1,0 +1,56 @@
+@use './scss/partials/colors';
+@use './scss/partials/mixins' as scr;
+@use './scss/sections/landing';
+@use './scss/sections/projects';
+@use './scss/sections/about';
+@use './scss/sections/contact';
+
+html { scroll-behavior: smooth; }
+
+
+.righteous-regular { 
+    font-family: "Righteous", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    }
+
+
+// <weight>: Use a value from 100 to 900 
+
+.noto-sans-body { 
+    font-family: "Noto Sans", serif; 
+    font-optical-sizing: auto; 
+    font-weight: 200; 
+    font-style: normal; 
+    font-variation-settings: 
+        "wdth" 100; 
+    }
+
+
+
+// .heading {
+//     font-family: "righteous", serif;
+//     font-weight: 400; 
+//     font-size: 7em;
+//     &_dutch {
+//         color: colors.$dutch-white;
+//     }
+// }
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: auto; //do not remove - gets rid of white border
+}
+
+
+
+#red-hand {
+    height: 300px;
+}
+
+@include scr.tablet {
+    h1 {
+        color: aqua;
+    }
+}
