@@ -4,7 +4,7 @@
 .projects {
     display: flex;
     background-color: colors.$eerie-black;
-    height: 100vh;
+    // height: 100vh;
 
 
     &_menu {
@@ -12,7 +12,8 @@
         flex-direction: column;
         align-items: center;
         width: 35%;
-        gap: 50px;
+        gap: 35px;
+        padding-bottom: 80px;
     }
    
     &_body-box {
@@ -29,8 +30,8 @@
         font-family: "Righteous", sans-serif; 
         font-weight: 400; 
         margin: 0%;
-        padding-top: 150px;
-        padding-bottom: 70px;
+        padding-top: 80px;
+        padding-bottom: 50px;
         
     }
     &_button {

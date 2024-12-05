@@ -1,14 +1,12 @@
 nav {
   background-color: #6b654b;
-  height: 50px;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   position: sticky;
   top: 0;
   padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-bottom: 15px;
   border-bottom: 0.3px solid #141719;
 }
 nav a {
@@ -17,8 +15,8 @@ nav a {
   font-size: 1.2em;
   font-family: "Noto Sans", serif;
   font-weight: 700;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 nav a:hover {
   color: #Bf4342;
@@ -28,8 +26,6 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   background-color: #141719;
-  height: 100vh;
-  width: 100vw;
 }
 .landing_heading-light {
   color: #D6d6b1;
@@ -53,11 +49,11 @@ nav a:hover {
   padding-right: 20px;
   padding-top: 160px;
   padding-left: 47%;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 577px) {
   nav {
-    height: 50px;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -86,7 +82,6 @@ nav a:hover {
 }
 @media screen and (min-width: 769px) {
   nav {
-    height: 50px;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -115,7 +110,6 @@ nav a:hover {
 }
 @media screen and (min-width: 1025px) {
   nav {
-    height: 50px;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -144,7 +138,6 @@ nav a:hover {
 }
 @media screen and (min-width: 1081px) {
   nav {
-    height: 50px;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -174,14 +167,14 @@ nav a:hover {
 .projects {
   display: flex;
   background-color: #141719;
-  height: 100vh;
 }
 .projects_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 35%;
-  gap: 50px;
+  gap: 35px;
+  padding-bottom: 80px;
 }
 .projects_body-box {
   background-color: #D6d6b1;
@@ -196,8 +189,8 @@ nav a:hover {
   font-family: "Righteous", sans-serif;
   font-weight: 400;
   margin: 0%;
-  padding-top: 150px;
-  padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 .projects_button {
   color: #D6d6b1;
@@ -391,8 +384,6 @@ nav a:hover {
 .about {
   display: flex;
   background-color: #6b654b;
-  height: 100vh;
-  width: 100vw;
   justify-content: space-between;
 }
 .about .about_logobox {
@@ -405,6 +396,7 @@ nav a:hover {
 }
 .about .about_bodybox {
   background-color: #141719;
+  padding-bottom: 80px;
   margin-top: 90px;
   width: 65%;
   display: flex;
@@ -422,10 +414,12 @@ nav a:hover {
 }
 .about .logo {
   height: 80px;
+  z-index: 1;
   filter: invert(96%) sepia(85%) saturate(223%) hue-rotate(358deg) brightness(89%) contrast(86%);
 }
 .about .logored {
   height: 80px;
+  z-index: 1;
   filter: invert(76%) sepia(88%) saturate(2862%) hue-rotate(310deg) brightness(94%) contrast(100%);
 }
 .about p {
@@ -543,7 +537,6 @@ nav a:hover {
 .contact {
   display: flex;
   background-color: #141719;
-  height: 100vh;
   flex-direction: column;
   align-items: center;
   border-top: 15px solid #6b654b;
@@ -559,12 +552,12 @@ nav a:hover {
 }
 .contact_box {
   background-color: #6b654b;
-  height: 70vh;
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  padding-bottom: 20px;
 }
 .contact p {
   color: #D6d6b1;
