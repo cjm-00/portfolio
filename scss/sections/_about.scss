@@ -9,7 +9,7 @@
     // width: 100vw;
     justify-content: space-between;
 
-    .about_logobox {
+    .about__logobox {
         display: flex;
         flex-direction: column;
         width: 35%;
@@ -19,7 +19,7 @@
         gap: 40px;
         
     }
-    .about_bodybox {
+    .about__bodybox {
         background-color: colors.$eerie-black;
         // height: 700px;
         padding-bottom: 80px;
@@ -30,7 +30,7 @@
         align-items: center;
     }
     
-    &_heading-light {
+    &__heading--light {
         color: colors.$dutch-white;
         font-size: 3em;
         font-family: "Righteous", sans-serif; 
@@ -77,15 +77,15 @@
     .about {
         // border: 2px solid greenyellow;
 
-        .about_logobox {   
+        .about__logobox {   
             margin-top: 25px;
             gap: 70px;
         }
-        .about_bodybox {
+        .about__bodybox {
             margin-top: 100px;
             // height: 840px;
         }
-        &_heading-light {
+        &__heading--light {
             font-size: 4em;
             padding-top: 35px;
             padding-bottom: 30px;
@@ -110,15 +110,15 @@
     .about {
         // border: 2px solid blueviolet;
 
-        .about_logobox {   
+        .about__logobox {   
             margin-top: 5px;
             gap: 60px;
         }
-        .about_bodybox {
+        .about__bodybox {
             margin-top: 100px;
             // height: 900px;
         }
-        &_heading-light {
+        &__heading--light {
             font-size: 5em;
             padding-top: 35px;
             padding-bottom: 30px;
@@ -143,15 +143,15 @@
     .about {
         // border: 2px solid pink;
 
-        .about_logobox {   
+        .about__logobox {   
             margin-top: 5px;
             gap: 30px;
         }
-        .about_bodybox {
+        .about__bodybox {
             margin-top: 80px;
             // height: 600px;
         }
-        &_heading-light {
+        &__heading--light {
             font-size: 4em;
             padding-top: 25px;
             padding-bottom: 18px;
@@ -176,15 +176,15 @@
     .about {
         // border: 2px solid red;
 
-        .about_logobox {   
+        .about__logobox {   
             margin-top: 5px;
             gap: 40px;
         }
-        .about_bodybox {
+        .about__bodybox {
             margin-top: 130px;
             // height: 880px;
         }
-        &_heading-light {
+        &__heading--light {
             font-size: 6em;
             padding-top: 35px;
             padding-bottom: 30px;
